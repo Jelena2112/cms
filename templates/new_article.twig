@@ -1,0 +1,19 @@
+
+{{ form_start(form) }}
+
+    <div>
+        {{ form_label(form.title, "Write some title") }}
+        {{ form_widget(form.title) }}
+    </div>
+
+    <div>
+        {{ form_label(form.text, "Write some text") }}
+        {{ form_widget(form.text) }}
+    </div>
+
+    <div>
+        {{ form_label(form.author, "Author") }}
+        {{ form_widget(form.author) }}
+    </div>
+{{ form_widget(form.save, { 'label': 'Submit me' }) }}
+{{ form_end(form) }}

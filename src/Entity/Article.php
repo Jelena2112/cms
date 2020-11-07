@@ -122,16 +122,17 @@ class Article
      */
     public function getCreatedOn(): DateTime
     {
-        return $this->created_on;
+        return $this->createdOn;
     }
 
     /**
-     * @param DateTime $created_on
+     * @param DateTime $createdOn
      */
-    public function setCreatedOn(DateTime $created_on): void
+    public function setCreatedOn(DateTime $createdOn): void
     {
-        $this->created_on = $created_on;
+        $this->createdOn = $createdOn;
     }
+
 
     /**
      * @return string
