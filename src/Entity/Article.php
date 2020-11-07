@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use App\Repository\ArticleRepository;
+use DateTime;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -45,7 +46,7 @@ class Article
     private $author;
 
     /**
-     * @var \DateTime
+     * @var DateTime
      * @ORM\Column (type="datetime", name="created_on")
      */
     private $createdOn;
@@ -63,23 +64,23 @@ class Article
     private $lastAction;
 
     /**
-     * @var \DateTime
+     * @var DateTime
      * @ORM\Column (type="datetime", name="last_action_date")
      */
     private $lastActionDate;
 
     /**
-     * @return \DateTime
+     * @return DateTime
      */
-    public function getLastActionDate(): \DateTime
+    public function getLastActionDate(): DateTime
     {
         return $this->lastActionDate;
     }
 
     /**
-     * @param \DateTime $lastActionDate
+     * @param DateTime $lastActionDate
      */
-    public function setLastActionDate(\DateTime $lastActionDate): void
+    public function setLastActionDate(DateTime $lastActionDate): void
     {
         $this->lastActionDate = $lastActionDate;
     }
@@ -117,17 +118,17 @@ class Article
     }
 
     /**
-     * @return \DateTime
+     * @return DateTime
      */
-    public function getCreatedOn(): \DateTime
+    public function getCreatedOn(): DateTime
     {
         return $this->created_on;
     }
 
     /**
-     * @param \DateTime $created_on
+     * @param DateTime $created_on
      */
-    public function setCreatedOn(\DateTime $created_on): void
+    public function setCreatedOn(DateTime $created_on): void
     {
         $this->created_on = $created_on;
     }
